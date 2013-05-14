@@ -21,7 +21,7 @@
 
 	img {
 		float: center;
-		width: 100%;
+		width: 75%;
 	}
 }
 
@@ -43,9 +43,9 @@
 }
 
 li {
-	display: inline;
-	color: red;
+	display: inline-block;
 	text-transform: uppercase;
+	padding: 5px;
 }
 
 
