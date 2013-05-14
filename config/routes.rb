@@ -1,9 +1,12 @@
 Depot::Application.routes.draw do
   get 'discover' => 'static_pages#discover'
 
+  get 'order' => 'store#index'
+
   get 'connect' => 'static_pages#connect'
 
   get 'admin' => 'admin#index'
+
 
   controller :sessions do
     get 'login' => :new
