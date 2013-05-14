@@ -6,9 +6,26 @@ body {
   line-height: 18px;
 }
 
-p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
+ol, ul {
+  width: 570px;
+  padding: 15px;
+  margin: 10px auto 10px auto;
+  border-top: 2px solid #000;
+  burder-bottom: 2px solid #000;
+  font-family: times, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+td {
+  font-family: times, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+p {
+  font-family: times, sans-serif;
+  font-size: 18px;
   line-height: 18px;
 }
 

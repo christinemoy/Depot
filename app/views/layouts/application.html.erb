@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Pragprog Books Online Store</title>
+  <title>Petite Sweet Treats</title>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -9,8 +9,15 @@
 <body class='<%= controller.controller_name %>'>
 	<div id="banner">
 		<%= image_tag("logo.png") %>
-		<%= @page_title || "Pragmatic Bookshelf" %>
+<!-- 		<%= @page_title %> -->
 	</div>
+		<ul id="navigation">
+			<li><a href="/discover">Discover</a></li>
+			<li><a href="http://www..../faq">Order</a></li>
+			<li><a href="/connect.html">Connect</a></li>
+			<li><a href="/contact.html">Contact</a></li>
+		</ul>
+
 	<div id="columns">
 		<div id="side">
 			<div id="cart">
@@ -21,14 +28,6 @@
 				<% end %>
 			</div>
 			
-			<ul>
-				<li><a href="http://www....">Home</a></li>
-				<li><a href="http://www..../faq">Questions</a></li>
-				<li><a href="http://www..../news">News</a></li>
-				<li><a href="http://www..../contact">Contact</a></li>
-				<li><%= Time.now %></li>
-			</ul>
-
 			<% if session[:user_id] %>
 				<ul>
 					<li><%= link_to 'Orders', orders_path %></li>
