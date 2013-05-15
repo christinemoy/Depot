@@ -7,15 +7,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body class='<%= controller.controller_name %>'>
+	<div id="topbox">
 	<div id="banner">
+		<p id="adminlogin"><%= link_to "admin login", login_path %> </p>
 		<%= image_tag("logo.png") %>
 <!-- 		<%= @page_title %> -->
 	</div>
 		<ul id="navigation">
-			<li><a href="/discover">Discover</a></li>
-			<li><a href="/order">Order</a></li>
-			<li><a href="/connect">Connect</a></li>
+			<li id="navbar"><a href="/discover">Discover</a></li>
+			<li id="navbar"><a href="/order">Order</a></li>
+			<li id="navbar"><a href="/connect">Connect</a></li>
 		</ul>
+	</div>
 
 	<div id="columns">
 		<div id="side">
@@ -26,20 +29,28 @@
 					<% end %>
 				<% end %>
 			</div>
-			
+
 			<% if session[:user_id] %>
-				<ul>
-					<li><%= link_to 'Orders', orders_path %></li>
-					<li><%= link_to 'Products', products_path %></li>
-					<li><%= link_to 'Users', users_path %></li>
+				<ul id="adminlinks">
+					<li id="adminlinks_title">Administrative Options</li>
+					<li><%= link_to 'Track Orders', orders_path %></li>
+					<li><%= link_to 'Manage Products', products_path %></li>
+					<li><%= link_to 'Manage Admin Users', users_path %></li>
 				</ul>
-			<%= button_to 'Logout', logout_path, method: :delete %>
+			<%= button_to 'Admin Logout', logout_path, method: :delete %>
 			<% end %>
 
 		</div>
 		<div id="main">
 			<%= yield %>
+
+	<footer>
+		<p>info@petitesweettreats.com</p>
+	</footer>
+
 		</div>
 	</div>
 </body>
+
+
 </html>

@@ -11,13 +11,23 @@
  *= require_self
  *= require_tree .
  */
+#adminlogin {
+	text-align: right;
+	font: arial;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+#topbox {
+    background-image: image-url('bluetable.jpg');
+    background-size: 35%;
+    width: 100%;
+}
 #banner {
-	background: white;
 	padding: 10px;
-	border-bottom: 2px solid;
-	font: small-caps 40px/40px "Times New Roman", serif;
 	color: white;
 	text-align: center;
+
 
 	img {
 		float: center;
@@ -37,31 +47,47 @@
 #navigation {
 	padding: 15px;
 	margin: 0px auto 0px auto;
-	border-top: 2px solid #000;
-	border-bottom: 1px solid #000;
-	background-color: white;
+	border-bottom: 1px solid white;
+}
+
+#navbar {
+	display: inline-block;
+	background: white;
+	padding: 10px;
+	width: 200px;
+	height: 15px;
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
 }
 
 li {
-	display: inline-block;
-	text-transform: uppercase;
+	display: block;
 	padding: 5px;
 }
 
+#adminlinks {
+	text-align: left;
+}
+
+#adminlinks_title{
+	font-weight: bold;
+	text-decoration: underline;
+}
 
 #columns {
-	background: white;
+		background: #FFFFCC;
 
 	#main {
 		margin-left: 17em;
 		padding: 1em;
-		background: white;
+		background: #FFFFCC;
 	}
 	#side {
 		float: left;
 		padding: 1em 2em;
 		width: 13em;
-		background: white;
+		background: #FFFFCC;
 
 		form, div {
 			display: inline;
@@ -73,7 +99,8 @@ li {
 
 		#cart {
 			font-size: smaller;
-			color: white;
+			font-family: arial;
+			color: grey;
 
 			table {
 				border-top: 1px dotted #595;
@@ -86,11 +113,11 @@ li {
 
 .depot_form {
 	fieldset {
-		background: #efe;
+		background: #FFCCCC;
 		legend {
-			color: #dfd;
-			background: #141;
-			font-family: sans-serif;
+			color: white;
+			background: #0099CC;
+			font-family: arial;
 			padding: 0.2em 1em;
 		}
 	}
