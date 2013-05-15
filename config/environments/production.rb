@@ -8,7 +8,7 @@ Depot::Application.configure do
     domain: "heroku.com",
     authentication: "plain",
     user_name: "app15624147",
-    password: "lzkwgrx3",
+    password: "1zkwgrx3",
     enable_starttls_auto: true
   }
   # Code is not reloaded between requests
