@@ -5,7 +5,7 @@ Depot::Application.configure do
   config.action_mailer.smtp_settings = {
     address: "smtp.sendgrid.net",
     port: 587,
-    domain: "heroku.com",
+    domain: "sendgrid.net",
     authentication: "plain",
     user_name: "app15624147",
     password: "1zkwgrx3",
