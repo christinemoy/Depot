@@ -7,7 +7,7 @@ Depot::Application.configure do
     port: 587,
     domain: "sendgrid.net",
     authentication: "plain",
-    user_name: "app15624147",
+    user_name: "app15624147@heroku.com",
     password: "1zkwgrx3",
     enable_starttls_auto: true
   }
