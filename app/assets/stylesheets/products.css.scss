@@ -9,12 +9,13 @@
 	}
 
 	.list_image {
-		width: 60px;
-		height: 70px;
+		width: 200px;
+		height: 200px;
 	}
 
 	.list_description {
-		width: 50%;
+		width: 100%;
+		text-align: left;
 		dl {
 			margin: 0;
 		}
