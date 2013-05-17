@@ -7,49 +7,66 @@
   <%= csrf_meta_tags %>
 </head>
 <body class='<%= controller.controller_name %>'>
-	<div id="topbox">
-	<div id="banner">
-		<p id="adminlogin"><%= link_to "admin login", login_path %> </p>
-		<%= image_tag("logo.png") %>
-<!-- 		<%= @page_title %> -->
-	</div>
-		<ul id="navigation">
-			<li id="navbar"><a href="/discover">Discover</a></li>
-			<li id="navbar"><a href="/order">Order</a></li>
-			<li id="navbar"><a href="/connect">Connect</a></li>
-		</ul>
-	</div>
 
-	<div id="columns">
-		<div id="side">
-			<div id="cart">
-				<% if @cart %>
-					<%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>
-						<%= render @cart %>
-					<% end %>
+	<div id="abovebanner">
+
+		<div id="adminbox" style="float: left">
+			<p class="button"><%= link_to "login /", login_path %><%= link_to '/ logout', logout_path, method: :delete %></p>
+					<% if session[:user_id] %>
+					<ul class="button">
+						<li><%= link_to 'Track Orders', orders_path %></li>
+						<li><%= link_to 'Inventory Products', products_path %></li>
+						<li><%= link_to 'Manage Users', users_path %></li>
+					</ul>
+					
 				<% end %>
-			</div>
-
-			<% if session[:user_id] %>
-				<ul id="adminlinks">
-					<li id="adminlinks_title">Administrative Options</li>
-					<li><%= link_to 'Track Orders', orders_path %></li>
-					<li><%= link_to 'Manage Products', products_path %></li>
-					<li><%= link_to 'Manage Admin Users', users_path %></li>
-				</ul>
-			<%= button_to 'Admin Logout', logout_path, method: :delete %>
-			<% end %>
-
 		</div>
-		<div id="main">
+
+		<div id="cart" style="float: right;">
+			<% if @cart %>
+				<%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>
+					<%= render @cart %>
+				<% end %>
+			<% end %>
+		</div>
+
+	</div>
+</br>
+	<div id="banner">
+		<div id="logo"><%= image_tag("logo.png") %></div>
+
+<!-- 		<%= @page_title %> -->
+		<ul class="navigation">
+			<li id="navmenu"><a href="/discover">Discover</a></li>
+			<li id="navmenu"><a href="/order">Order</a></li>
+			<li id="navmenu"><a href="/connect">Connect</a></li>
+		</ul>
+			<li id="icon"><%= link_to image_tag("facebook.png"), "http://www.facebook.com/petitesweettreats" %></li>
+			<li id="icon"><%= link_to image_tag("pinterest.png"), "http://www.pinterest.com/sweetsbychanel" %></li>
+			<li id="icon"><%= link_to image_tag("instagram.png"), "http://www.instagram.com" %></li>
+			<li id="icon"><%= link_to image_tag("twitter.png"), "http://www.twitter.com/sweetsbychanel" %></li>
+
+	</div>
+
+
+
+		<div id="content">
 			<%= yield %>
 
-	<footer>
-		<p>info@petitesweettreats.com</p>
-	</footer>
-
+		<footer>
+		<%= image_tag("phone.jpg") %></br>
+		Chanel Renee</br>
+		(646) 397-1552</br>
+		New York City</br>
+		info@petitesweettreats.com</br>
+		</br>
+		Available for Private Parties, Events</br>
+		</br>
+		<%= image_tag("send-email-footer.jpg")%>
+		</footer>
 		</div>
-	</div>
+
+
 </body>
 
 

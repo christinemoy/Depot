@@ -11,104 +11,98 @@
  *= require_self
  *= require_tree .
  */
-#adminlogin {
-	text-align: right;
-	font: arial;
-	font-size: 10px;
-	text-transform: uppercase;
+
+
+
+#abovebanner {
+	width: 75%;
+	margin-left:auto;
+	margin-right:auto;
+
+	li {
+	line-height: 50%;
+	display: block;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-right:0px;
+	padding-left:0px;
+	}
+
+	ul {
+	padding: 0px;
+	}
 }
 
-#topbox {
-    background-image: image-url('bluetable.jpg');
-    background-size: 35%;
-    width: 100%;
-}
+
 #banner {
-	padding: 10px;
-	color: white;
+	padding-top: 25px;
+	padding-right: 25px;
+	padding-left: 25px;
+	background-image:url('http://www.petercallahan.com/wp-content/themes/themeology/assets/img/global/header_bg.png');
+	width: 75%;
+	margin-top: 100px;
+	margin-left:auto;
+	margin-right: auto;
 	text-align: center;
 
-
-	img {
-		float: center;
-		width: 75%;
+ 	img {
+	width: 75%;
 	}
+
 }
 
-#notice {
-	color: #000 !important;
-	border: 2px solid red;
-	padding: 1em;
-	margin-bottom: 2em;
-	background-color: #f0f0f0;
-	font: bold smaller sans-serif;
-}
 
-#navigation {
-	padding: 15px;
-	margin: 0px auto 0px auto;
-	border-bottom: 1px solid white;
-}
-
-#navbar {
-	display: inline-block;
+#content {
 	background: white;
-	padding: 10px;
-	width: 200px;
-	height: 15px;
-	border-radius: 100px;
-	-moz-border-radius: 100px;
-	-webkit-border-radius: 100px;
+	width: 75%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 5em;
+	padding: 25px;
 }
 
-li {
-	display: block;
-	padding: 5px;
-}
 
-#adminlinks {
-	text-align: left;
-}
 
-#adminlinks_title{
-	font-weight: bold;
-	text-decoration: underline;
-}
+.navigation {
+	background-color: black;
+	line-height: 300%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	width: 100%;
+	height: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
 
-#columns {
-		background: #FFFFCC;
-
-	#main {
-		margin-left: 17em;
-		padding: 1em;
-		background: #FFFFCC;
+	li{
+	display: inline;
+	padding-right: 25px;
+	padding-left: 25px;
 	}
-	#side {
-		float: left;
-		padding: 1em 2em;
-		width: 13em;
-		background: #FFFFCC;
 
-		form, div {
-			display: inline;
-		}
 
-		input {
-			font-size: small;
-		}
+}
 
-		#cart {
-			font-size: smaller;
-			font-family: arial;
-			color: grey;
+#icon{
+	display: inline;
+	width: 24px;
+	height: 24px;
+	padding-right: 0px;
+	padding-left: 0px;
+}
 
-			table {
-				border-top: 1px dotted #595;
-				border-bottom: 1px dotted #595;
-				margin-bottom: 10px;
-			}
-		}
-	}
+#navmenu {
+	color: white;
+	text-transform: uppercase;
+	font-family: lora;
+	font-size: 15px;
+}
+
+footer{
+	text-align: center;
+	font-size: 14px;
+	font-family: lora;
+	text-transform: none;
 }
 
 .depot_form {
@@ -143,4 +137,21 @@ li {
 			display: none
 		}
 	}
+}
+
+#icon{
+	padding: 0px;
+	img{
+	width: 25px;
+	background-color: none;
+	padding: 0px;
+	}
+}
+#notice {
+	color: #000 !important;
+	border: 2px solid red;
+	padding: 1em;
+	margin-bottom: 2em;
+	background-color: #f0f0f0;
+	font: bold smaller sans-serif;
 }
