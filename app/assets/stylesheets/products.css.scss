@@ -16,25 +16,34 @@
 	.list_description {
 		width: 100%;
 		text-align: left;
+
+
 		dl {
 			margin: 0;
 		}
 
 		dt {
-			color: black;
+			color: grey;
 			font-weight: bold;
-			font-size: larger;
+			font-size: 18px;
 		}
 
 		dd {
 			margin: 0;
+			color: grey;
+			font-size: 14px;
 		}
 	}
 
 	.list_actions {
-		font-size: x-small;
+		font-size: 10px;
 		text-align: right;
 		padding-left: 1em;
+	}
+
+	a{
+		color: grey;
+		text-transform: uppercase;
 	}
 
 	.list_line_even {

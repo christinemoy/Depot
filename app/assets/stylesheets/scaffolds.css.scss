@@ -9,7 +9,9 @@ body {
   background-image: url('http://www.zingerbugimages.com/backgrounds/black_vertical_stripes_background_seamless.jpg');
 }
 
-
+td {
+  color: grey;
+}
 
 p {
   font-family: lora;
@@ -19,7 +21,7 @@ p {
 
 
 a {
-  color: white;
+  color: grey;
   text-decoration: none;
   &:hover {
     color: grey;

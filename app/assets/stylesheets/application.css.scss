@@ -31,6 +31,13 @@
 	ul {
 	padding: 0px;
 	}
+
+	a{
+	color: white;
+	  &:hover {
+    color: grey;
+  }
+	}
 }
 
 
@@ -96,6 +103,13 @@
 	text-transform: uppercase;
 	font-family: lora;
 	font-size: 15px;
+
+	a{
+	color: white;
+	  &:hover {
+    color: grey;
+  }
+	}
 }
 
 footer{
@@ -140,11 +154,12 @@ footer{
 }
 
 #icon{
-	padding: 0px;
 	img{
 	width: 25px;
 	background-color: none;
-	padding: 0px;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
 	}
 }
 #notice {

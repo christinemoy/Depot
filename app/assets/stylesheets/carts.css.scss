@@ -2,13 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
-td {
+#adminbox{
+	td {
   text-align: left;
   font: lora;
   font-size: 10px;
   color: grey;
   line-height: 80%;
+	}
 }
 
 
