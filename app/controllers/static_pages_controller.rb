@@ -9,5 +9,7 @@ skip_before_filter :authorize
   end
 
   def connect
+  	# @instagram = Instagram.user_recent_media("274890609", {:count => 1})
   end
+
 end
